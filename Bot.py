@@ -317,5 +317,35 @@ def start(video, botChoice):
                         driver.find_element(By.XPATH, home)
                         
                     if continue1 == True:
+                        time.sleep(2)
+                        driver.find_element(By.XPATH, i[2]).click()
+                        time.sleep(3)
+                        
+                        try:
+                            driver.find_element(By.XPATH, i[3]).click()
+                            continue2 = True
+                            print(f"{color('>', 'green')} Sent {i[5]}, Getting Cool Down.\n")
+                        except:
+                            print(f"{color('>', 'red')} {i[5]} Cool Down Isn't Finished, Getting Cool Down.\n")
+                            time.sleep(5)
+                            cooldownList.append(findCooldown(i[4]))
+                            driver.find_element(By.XPATH, home).click()
+                            continue2 = False
+                    
+                        if continue2 == True:
+                            time.sleep(2)
+                            cooldownList.append(findCooldown(i[4]))
+                            driver.refresh()
+                    else:
+                        pass
+                else:
+                    pass
+                
+                amount += 1
+                cooldownList.sort()
+                
+                print(f"{color('>', 'green')}")
+                    
+                    
                 
                 

@@ -1,2 +1,4 @@
 # Titkok-Bot
- This is a tiktok bot you can use
+Tiktok bot to up your follower
+
+Coming Soon...

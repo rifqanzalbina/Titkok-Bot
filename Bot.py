@@ -105,7 +105,7 @@ class printing():
     def refresh():
         system("cls")
         printing.text()
-        align(f"\n\n\t\t\t{color('>', 'green')} Made By: {Fore.LIGHTMAGENTA_EX}Dreamer#5114 {color('<', 'green')}")
+        align(f"\n\n\t\t\t{color('>', 'green')} Made By: {Fore.LIGHTMAGENTA_EX}Rifqanzalbina {color('<', 'green')}")
         align(f"\t\t\t\t{color('>', 'green')} {Fore.LIGHTGREEN_EX}Github: {Fore.LIGHTMAGENTA_EX}https://github.com/rifqanzalbina/Tiktok-Bot {color('<', 'green')}")
         printing.options()
 
